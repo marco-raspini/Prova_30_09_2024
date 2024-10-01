@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="411dp"
+        android:layout_height="731dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="-1dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30sp"
+            android:text="Rodrigo's Travel Edition"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/txtLocalViagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="Destino da Viagem"
+            android:inputType="text" />
+
+        <EditText
+            android:id="@+id/txtDataViagem"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="Data da Viagem"
+            android:inputType="date" />
+
+        <EditText
+            android:id="@+id/txtValorGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="20sp"
+            android:ems="10"
+            android:hint="Valor Total Gasto"
+            android:inputType="numberDecimal" />
+
+        <Button
+            android:id="@+id/btnCadastrar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="20sp"
+            android:layout_marginRight="50sp"
+            android:layout_marginBottom="10sp"
+            android:text="Cadastrar"
+            android:textColorLink="#673AB7" />
+
+        <ListView
+            android:id="@+id/listViewLugares"
+            android:layout_width="match_parent"
+            android:layout_height="243dp"
+            android:layout_marginTop="30sp" />
+
+        <TextView
+            android:id="@+id/txtTotalGasto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50sp"
+            android:layout_marginTop="50sp"
+            android:layout_marginRight="50sp"
+            android:hint="Total Gasto"
+            android:textAlignment="center"
+            android:textSize="24sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
